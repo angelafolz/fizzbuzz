@@ -23,12 +23,12 @@ $(document).ready(function(){
 	// get input for highest number
 	playBtn.click(function() {
 		var value = input.val();
-		if (value < 1000) {
+		if (0 < value && value < 1000) {
 			playFizzBuzz(value);
 		} else if (value >= 1000) {
 			alert("I may be a computer, but I don't have all day. Try a number less than 1000.");
 		} else {
-			alert("That's not an integer, silly.");
+			alert("That's not an integer > 0.");
 		}
 		input.val("").focus();
 	});
